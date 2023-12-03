@@ -28,7 +28,6 @@ int main() {
 		{ -1, +0 },             { +1, +0 },
 		{ -1, +1 }, { +0, +1 }, { +1, +1 },
 	};
-	std::vector<int> partNumbers;
 
 	// Goes through our 2d grid
 	bool label = false;
