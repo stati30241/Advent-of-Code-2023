@@ -49,7 +49,7 @@ int main() {
 	for (int64_t& seed : seeds) {
 		for (const auto& section : mappings) {
 			for (const auto& mapping : section) {
-				if (seed > mapping.sourceRangeStart && seed <= mapping.sourceRangeStart + mapping.rangeLength) {
+				if (seed >= mapping.sourceRangeStart && seed <= mapping.sourceRangeStart + mapping.rangeLength) {
 					seed += mapping.destinationRangeStart - mapping.sourceRangeStart;
 					break;
 				}
