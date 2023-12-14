@@ -75,7 +75,7 @@ int main() {
 	int sum = 0;
 	std::vector<std::pair<int, int>> dirs = { { -1, 0 }, { 0, -1 }, { 1, 0 }, { 0, 1 } };
 	std::vector<int> sums; // Represented as a string because taking substrings is easier
-	for (size_t i = 0; i < 10000; ++i) {
+	for (size_t i = 0; i < 1000000000; ++i) {
 		// Tilts the map in all four directions, going through one cycle
 		for (const auto& dir : dirs) {
 			tiltMap(map, dir);
